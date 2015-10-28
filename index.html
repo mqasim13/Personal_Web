@@ -2,71 +2,181 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Bootstrap 3 Fixed Layout Example</title>
+<title>MuhammadQasim Dewji</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <style type="text/css">
     body{
-    	padding-top: 70px;
+        padding-top: 70px;
     }
 </style>
 </head>
 <body>
-<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-	<!-- Brand and toggle get grouped for better mobile display -->
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Tutorial Republic</a>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="http://www.tutorialrepublic.com" target="_blank">Home</a></li>
-				<li><a href="http://www.tutorialrepublic.com/about-us.php" target="_blank">About</a></li>
-				<li><a href="http://www.tutorialrepublic.com/contact-us.php" target="_blank">Contact</a></li>
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">MuhammadQasim Dewji</a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<body class=" meny-left " style="perspective: 800px; perspective-origin: 0px 50%;">
+
+		<div class="meny" style="width: 260px; height: 100%; position: fixed; display: block; z-index: 1; transform-origin: 100% 50% 0px; transition: all 0.5s ease; transform: translateX(-100%) translateX(6px) scale(1.01) rotateY(-30deg);">
+			<h2>More Experiments</h2>
+			<ul>
+				<li><a href="http://lab.hakim.se/avgrund/">Avgrund</a></li>
+				<li><a href="http://lab.hakim.se/radar/">Radar</a></li>
+				<li><a href="http://lab.hakim.se/forkit-js/">forkit.js</a></li>
+				<li><a href="http://lab.hakim.se/scroll-effects/">stroll.js</a></li>
+				<li><a href="http://lab.hakim.se/zoom-js">zoom.js</a></li>
+				<li><a href="http://lab.hakim.se/reveal-js">reveal.js</a></li>
+				<li><a href="http://itunes.apple.com/us/app/sinuous/id543097218">Sinuous for iOS</a></li>
+				<li><a href="http://hakim.se/experiments/css/domtree/">DOM Tree</a></li>
+				<li><a href="http://hakim.se/experiments/css/holobox/">Holobox</a></li>
+				<li><a href="http://hakim.se/experiments/html5/404/netmag.html">404</a></li>
 			</ul>
 		</div>
-	</div>
-</nav>
+
+		<div class="meny-arrow"></div>
+
+		<div class="contents" style="transform-origin: 0px 50% 0px; transition: all 0.5s ease;">
+			<article>
+				<h1>Meny</h1>
+				<p>
+					A three dimensional and space efficient menu.
+				</p>
+				<p>
+					Move your mouse towards the arrow — or swipe in from the arrow if you're on a touch device — to open.
+					Test it with any page by appending a URL, like so: <a href="http://lab.hakim.se/meny/?u=http://hakim.se">lab.hakim.se/meny/?u=http://hakim.se.</a>
+				</p>
+				<p>
+					Meny can be positioned on any side of the screen: <br>
+					 <a href="http://lab.hakim.se/meny/?p=top">top</a>
+					 - <a href="http://lab.hakim.se/meny/?p=right">right</a>
+					 - <a href="http://lab.hakim.se/meny/?p=bottom">bottom</a>
+					 - <a href="http://lab.hakim.se/meny/?p=left">left</a>
+				</p>
+				<p>
+					Instructions and download at <a href="http://github.com/hakimel/meny">github.com/hakimel/meny</a>.
+				</p>
+				<p>
+					The name, <em>Meny</em>, is swedish.
+				</p>
+				<small>
+					Created by <a href="http://twitter.com/hakimel">@hakimel</a> / <a href="http://hakim.se/">http://hakim.se</a>
+				</small>
+			</article>
+
+			<div class="sharing">
+				<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.a428ab2e859e8008e0df5404770eb017.en.html#_=1446013188742&amp;count=horizontal&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Flab.hakim.se%2Fmeny%2F&amp;related=hakimel&amp;size=m&amp;text=Meny%20-%20a%20three%20dimensional%20and%20space%20efficient%20menu%20concept%20by%20%40hakimel&amp;type=share&amp;url=http%3A%2F%2Flab.hakim.se%2Fmeny" style="position: static; visibility: visible; width: 97px; height: 20px;" data-url="http://lab.hakim.se/meny"></iframe>
+
+				<iframe id="facebook-button" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flab.hakim.se%2Fmeny%2F&amp;layout=button_count&amp;show_faces=false&amp;width=83&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:24px; position: relative; top: 4px;" allowtransparency="true"></iframe>
+			</div>
+
+			<a href="https://github.com/hakimel/meny"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://github-camo.global.ssl.fastly.net/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div style="position: absolute; display: block; width: 100%; height: 673px; left: 0px; top: 0px; z-index: 1000; visibility: hidden; opacity: 0; transition: all 0.5s ease; background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.65098) 100%);"></div></div>
+
+		<script async="" src="http://www.google-analytics.com/ga.js"></script><script src="js/meny.min.js"></script>
+		<script>
+			// Create an instance of Meny
+			var meny = Meny.create({
+				// The element that will be animated in from off screen
+				menuElement: document.querySelector( '.meny' ),
+
+				// The contents that gets pushed aside while Meny is active
+				contentsElement: document.querySelector( '.contents' ),
+
+				// [optional] The alignment of the menu (top/right/bottom/left)
+				position: Meny.getQuery().p || 'left',
+
+				// [optional] The height of the menu (when using top/bottom position)
+				height: 200,
+
+				// [optional] The width of the menu (when using left/right position)
+				width: 260,
+
+				// [optional] Distance from mouse (in pixels) when menu should open
+				threshold: 40,
+
+				// [optional] Use mouse movement to automatically open/close
+				mouse: true,
+
+				// [optional] Use touch swipe events to open/close
+				touch: true
+			});
+
+			// API Methods:
+			// meny.open();
+			// meny.close();
+			// meny.isOpen();
+
+			// Events:
+			// meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+			// meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+			// Embed an iframe if a URL is passed in
+			if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+				var contents = document.querySelector( '.contents' );
+				contents.style.padding = '0px';
+				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+			}
+		</script>
+
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+		<script>
+		var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+		(function(d, t) {
+		var g = d.createElement(t),
+		    s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+		})(document, 'script');
+		</script>
+
+
+</body>
+<div class="meny">
+    <li>
+        ::before
+        <a href="#">Home</a>
+    </li>
+    <li>
+        ::before
+        <a href="#">About Me</a>
+    </li>
+    <li>
+        ::before
+        <a href="#">Projects</a>
+    </li>
+
+    </menu>
+<div class="jumbotron">
+    <div class="container">
+        <h1>Home</h1>
+        <p>I have literally no idea what I'm going to put in this page</p>
+    </div>
+</div>
 <div class="container">
-	<div class="jumbotron">
-		<h1>Learn to Create Websites</h1>
-		<p>In today's world internet is the most popular way of connecting with the people. At <a href="http://www.tutorialrepublic.com" target="_blank">tutorialrepublic.com</a> you will learn the essential of web development technologies along with real life practice example, so that you can create your own website to connect with the people around the world.</p>
-		<p><a href="http://www.tutorialrepublic.com" target="_blank" class="btn btn-success btn-lg">Get started today</a></p>
-	</div>
-	<div class="row">
-		<div class="col-xs-4">
-			<h2>HTML</h2>
-			<p>HTML is a markup language that is used for creating web pages. The HTML tutorial section will help you understand the basics of HTML, so that you can create your own web pages or website.</p>
-			<p><a href="http://www.tutorialrepublic.com/html-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-		</div>
-		<div class="col-xs-4">
-			<h2>CSS</h2>
-			<p>CSS is used for describing the presentation of web pages. The CSS tutorial section will help you learn the essentials of CSS, so that you can fine control the style and layout of your HTML document.</p>
-			<p><a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-		</div>
-		<div class="col-xs-4">
-			<h2>Bootstrap</h2>
-			<p>Bootstrap is a powerful front-end framework for faster and easier web development. The Bootstrap tutorial section will help you learn the techniques of Bootstrap so that you can quickly create your own website.</p>
-			<p><a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank" class="btn btn-success">Learn More &raquo;</a></p>
-		</div>
-	</div>
-	<hr>
-	<div class="row">
-		<div class="col-xs-12">
-			<footer>
-				<p>&copy; Copyright 2013 Tutorial Republic</p>
-			</footer>
-		</div>
-	</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus. Tibulum consectetur scelerisque lacus, ac fermentum lorem convallis sed.</p>
 </div>
 </body>
 </html>
