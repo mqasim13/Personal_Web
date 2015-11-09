@@ -9,6 +9,8 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Meny -->
+    <link href="css/meny.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,14 +18,56 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
   </head>
   <body>
-    <h1>MuhammadQasim Dewji</h1>
-    <p>This is going to be my personal website</p>
+    <div>
+      <div class="meny">
+        <!--my menu items-->
+        <h2>Test</h2>
+      </div>
+      <div class="contents">
+        <!--my page content-->
+        <h1>MuhammadQasim Dewji</h1>
+        <p>This is going to be my personal website</p>
+      </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!--Menu script-->
+    <script src="js/meny.js"></script>
+    <script>
+      var meny = Meny.create({
+        //The element that will be animated in from off screen
+        menuElement: document.querySelector( '.meny' ),
+        //The contents that gets pushed aside while Meny is active
+        contentsElement: document.querySelector( '.content' ),
+        //The alignment of the menu(top/right/bottom/left)
+        position: 'left',
+        //The height of the menu
+        height: 200,
+        //The width of the menu
+        width: 260,
+        //The angle at which the content will rotate to
+        angle: 30,
+        //The mouse distance from menu position which can trigger menu to open
+        threshold: 40,
+        //Width(in px) of the thin line you see on screen when menu is in closed mode
+        overlap: 6,
+        //The total time take by menu animation
+        transitionDuration: '0.5s',
+        //Transiton style for menu animations
+        transitionEasing: 'ease',
+        //Gradient overlay for contents
+        gradient: 'rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.65) 100%)',
+        //Use mouse movement to automatically open/close
+        mouse: true,
+        //Use touch swipe events to open/close
+        touch: true
+      });
+      </script>
   </body>
 </html>
