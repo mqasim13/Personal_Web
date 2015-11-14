@@ -1,0 +1,12 @@
+
+/* Change color of Jumbotron */
+
+.jumbotron{
+    background-color = #f76f76;
+}
+
+/* Change color of Meny arrow */
+
+.meny-left .meny-arrow{
+    border-right: 16px solid #f76f76;
+}
