@@ -1,135 +1,22 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Qasim Dewji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Meny -->
-    <link href="css/meny.css" rel="stylesheet">
-    <!--Custom CSS -->
-    <linl href="css/custom.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <title>Hello, world!</title>
   </head>
   <body>
+    <h1>Hello, world!</h1>
 
-	  <div class="meny">
-
-		  <ul>
-			  <li><a href="google.ca">About Me</a></li>
-			  <li><a href="http://mqasim13.github.io/Pymail/">Pymail</a></li>
-			  <li><a href="http://mqasim13.github.io/BiblioPy/">BiblioPy</a></li>
-			  <li><a href="http://mqasim13.github.io/fizzbuzz/">Fizzbuzz</a></li>
-
-			  <!-- <li><a href="http://lab.hakim.se/zoom-js">zoom.js</a></li> -->
-			  <!-- <li><a href="http://lab.hakim.se/reveal-js">reveal.js</a></li> -->
-			  <!-- <li><a href="http://itunes.apple.com/us/app/sinuous/id543097218">Sinuous for iOS</a></li> -->
-			  <!-- <li><a href="http://hakim.se/experiments/css/domtree/">DOM Tree</a></li>
-			  <li><a href="http://hakim.se/experiments/css/holobox/">Holobox</a></li>
-			  <li><a href="http://hakim.se/experiments/html5/404/netmag.html">404</a></li> -->
-		  </ul>
-	  </div>
-
-	  <div class="meny-arrow"></div>
-
-	  <div class="contents">
-		  <div class="container text-center">
-			  <div class="jumbotron">
-				  <img src="Q_Headshot.jpg"  class="img-rounded",  alt="MuhammadQasim Dewji" width="230" height="200">
-				  <h1>Qasim Dewji</h1>
-				  <p>
-					This website will showcase some of my projects
-				  </p>
-			  </div>
-		  </div>
-			  <!-- <p>
-				  Move your mouse towards the arrow &mdash; or swipe in from the arrow if you're on a touch device &mdash; to open.
-			  </p> -->
-			  <!--<p>
-				  Meny can be positioned on any side of the screen: <br>
-				   <a href="http://lab.hakim.se/meny/?p=top">top</a>
-				   - <a href="http://lab.hakim.se/meny/?p=right">right</a>
-				   - <a href="http://lab.hakim.se/meny/?p=bottom">bottom</a>
-				   - <a href="http://lab.hakim.se/meny/?p=left">left</a>
-			  </p>
-			  <p>
-				  Instructions and download at <a href="http://github.com/hakimel/meny">github.com/hakimel/meny</a>.
-			  </p>
-			  <p>
-				  The name, <em>Meny</em>, is swedish.
-			  </p>-->
-			  <!--<small>
-				  Created by <a href="http://twitter.com/hakimel">@hakimel</a> / <a href="http://hakim.se/">http://hakim.se</a>
-			  </small>-->
-		  </article>
-
-		  <!--<div class="sharing">
-			  <a href="http://twitter.com/share" class="twitter-share-button" data-text="Meny - a three dimensional and space efficient menu concept by @hakimel" data-url="http://lab.hakim.se/meny" data-count="small" data-related="hakimel"></a>
-
-			  <iframe id="facebook-button" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Flab.hakim.se%2Fmeny%2F&layout=button_count&show_faces=false&width=83&action=like&font=arial&colorscheme=light&height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:24px; position: relative; top: 4px;" allowTransparency="true"></iframe>
-		  </div>-->
-
-	  </div>
-
-	  <script src="js/meny.js"></script>
-	  <script>
-		  // Create an instance of Meny
-		  var meny = Meny.create({
-			  // The element that will be animated in from off screen
-			  menuElement: document.querySelector( '.meny' ),
-
-			  // The contents that gets pushed aside while Meny is active
-			  contentsElement: document.querySelector( '.contents' ),
-
-			  // [optional] The alignment of the menu (top/right/bottom/left)
-			  position: Meny.getQuery().p || 'left',
-
-			  // [optional] The height of the menu (when using top/bottom position)
-			  height: 200,
-
-			  // [optional] The width of the menu (when using left/right position)
-			  width: 260,
-
-			  // [optional] Distance from mouse (in pixels) when menu should open
-			  threshold: 40,
-
-			  // [optional] Use mouse movement to automatically open/close
-			  mouse: true,
-
-			  // [optional] Use touch swipe events to open/close
-			  touch: true
-		  });
-
-		  // API Methods:
-		  // meny.open();
-		  // meny.close();
-		  // meny.isOpen();
-
-		  // Events:
-		  // meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
-		  // meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
-
-		  // Embed an iframe if a URL is passed in
-		  if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
-			  var contents = document.querySelector( '.contents' );
-			  contents.style.padding = '0px';
-			  contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
-		  }
-	  </script>
-
-	  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
- </html>
+</html>
